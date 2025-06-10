@@ -1,24 +1,24 @@
-const first = document.getElementById("first");
-const second = document.getElementById("second");
+const firstnumber = document.getElementById("firstnumber");
+const secondnumber = document.getElementById("secondnumber");
 
 function addnumbers() {
-    const cong = parseFloat(first.value) + parseFloat(second.value);
-    document.getElementById("cong").textContent = cong;
+    const addnuber = parseFloat(firstnumber.value) + parseFloat(secondnumber.value);
+    document.getElementById("addnumber").textContent = addnuber;
 }
 function subtractnumbers() {
-    const tru =parseFloat(first.value) - parseFloat(second.value);
-    document.getElementById("tru").textContent = tru;
+    const subtract =parseFloat(firstnumber.value) - parseFloat(secondnumber.value);
+    document.getElementById("subtractnumber").textContent = subtract;
 }
 function multiplication() {
-    const nhan = parseFloat(first.value) * parseFloat(second.value);
-    document.getElementById("nhan").textContent = nhan;
+    const multiplication = parseFloat(firstnumber.value) * parseFloat(secondnumber.value);
+    document.getElementById("multiplication").textContent = multiplication;
 }
 function divide() {
-    const chia = parseFloat(first.value) / parseFloat(second.value);
-    document.getElementById("chia").textContent = chia;
+    const divide = parseFloat(firstnumber.value) / parseFloat(secondnumber.value);
+    document.getElementById("divide").textContent = divide;
 }
 
-document.getElementById("btntru").addEventListener("click", subtractnumbers);
-document.getElementById("btncong").addEventListener("click", addnumbers);
-document.getElementById("btnnhan").addEventListener("click", multiplication);
-document.getElementById("btnchia").addEventListener("click", divide);
+document.getElementById("btnaddnumber").addEventListener("click", subtractnumbers);
+document.getElementById("btnsubtractnumber").addEventListener("click", addnumbers);
+document.getElementById("btnmultiplication").addEventListener("click", multiplication);
+document.getElementById("btndivide").addEventListener("click", divide);
